@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.projects</groupId>
 	<artifactId>EmployeeManagementSystem</artifactId>
-	<version>0.1.0-SNAPSHOT</version>
+	<version>0.1.0</version>
 	<name>Employee_management_system</name>
 	<description>Spring Project for Employee Management System</description>
 	<properties>
