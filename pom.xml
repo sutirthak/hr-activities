@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.projects</groupId>
-	<artifactId>Employee_management_system</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>EmployeeManagementSystem</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
 	<name>Employee_management_system</name>
-	<description>Sring Project for Employee Management System</description>
+	<description>Spring Project for Employee Management System</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

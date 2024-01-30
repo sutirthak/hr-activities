@@ -12,7 +12,6 @@ import com.qinvent.hr.service.EmployeeServ;
 
 @Service
 public class EmployeeServIMPL implements EmployeeServ {
-	
 	@Autowired
 	private EmployeeRepo empRepo;
 
@@ -21,12 +20,10 @@ public class EmployeeServIMPL implements EmployeeServ {
 		Employee emp = empRepo.save(employee);
 		return emp;
 	}
-
 	@Override
 	public String removeEmployee(int id) {
 		empRepo.deleteById(id);
 		return "Employe Id: "+id+" Sucessfully Deleted";
-		
 	}
 
 	@Override
@@ -54,14 +51,9 @@ public class EmployeeServIMPL implements EmployeeServ {
 			return "Employee Updated Sucessfully...";
 			
 		}
-		
 		else {
 			return "Employee Not Found !!";
 			
 		}
-		
 	}
-	
-	
-
 }
