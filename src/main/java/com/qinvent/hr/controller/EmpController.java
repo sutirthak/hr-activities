@@ -7,10 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/emp")
 public class EmpController {
-	
+
 	@GetMapping("/home")
-	public String EmpHomePage() {
+	public String EmpHomePage()
+	{
 		return "Welcome to Employee Data Management System";
 	}
-
 }
+
+

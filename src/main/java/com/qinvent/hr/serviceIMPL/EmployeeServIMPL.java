@@ -10,7 +10,6 @@ import com.qinvent.hr.models.Employee;
 import com.qinvent.hr.repository.EmployeeRepo;
 import com.qinvent.hr.service.EmployeeServ;
 
-
 @Service
 public class EmployeeServIMPL implements EmployeeServ {
 	
@@ -19,11 +18,7 @@ public class EmployeeServIMPL implements EmployeeServ {
 
 	@Override
 	public Employee addEmployee(Employee employee) {
-		
-		
 		Employee emp = empRepo.save(employee);
-		
-		
 		return emp;
 	}
 
@@ -52,7 +47,6 @@ public class EmployeeServIMPL implements EmployeeServ {
 	@Override
 	public String updateEmployee(int id) {
 		Optional<Employee> emp = empRepo.findById(id);
-		
 		if(emp.isPresent())
 		{
 			Employee emps = new Employee();
