@@ -1,0 +1,5 @@
+com.qinvent.hr
+com.qinvent.hr.controller
+com.qinvent.hr.models
+com.qinvent.hr.repository
+com.qinvent.hr.service
