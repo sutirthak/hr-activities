@@ -5,6 +5,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+/**
+ * @Employee - Class holding Employee Parameters, Data Types,Constructor and Getter-Setter functions.
+ */
 @Entity
 public class Employee {
 	@Id
