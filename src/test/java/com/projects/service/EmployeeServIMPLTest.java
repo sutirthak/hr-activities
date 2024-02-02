@@ -41,4 +41,13 @@ public class EmployeeServIMPLTest {
         verify(employeeservice).addEmployee(user);
     }
 
+    @Test
+    public void whenDeleteEmployee_shouldReturnString() {
+        Employee user = new Employee();
+        user.setId(1);
+        when(employeeservice.removeEmployee(1)).thenReturn("user");
+        String deleted = employeeservice.removeEmployee(1);
+        assertThat(deleted).isSameAs("user");
+    }
+
 }
