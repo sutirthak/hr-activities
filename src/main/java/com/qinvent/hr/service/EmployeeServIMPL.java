@@ -11,7 +11,7 @@ import com.qinvent.hr.repository.EmployeeRepo;
 import com.qinvent.hr.service.EmployeeServ;
 
 /**
- * @EmployeeServImpl - Implementation class for EmployeeServ Interface
+ * This class is the implementation class for the Interface EmployeeServ
  */
 @Service
 public class EmployeeServIMPL implements EmployeeServ {
@@ -19,7 +19,6 @@ public class EmployeeServIMPL implements EmployeeServ {
 	private EmployeeRepo empRepo;
 
 	/**
-	 *
 	 * @param employee - Adds New Employee to the database
 	 * @return emp - an object of Employee class
 	 */
@@ -30,9 +29,9 @@ public class EmployeeServIMPL implements EmployeeServ {
 	}
 
 	/**
-	 *
-	 * @param id - Employee Unique ID - Auto Generated for each Employee
-	 * @return String - an Opeeration Successful Message
+	 * Removes an Employee from database using id
+	 * @param id
+	 * @return String - an Operation Successful Message
 	 */
 	@Override
 	public String removeEmployee(int id) {
@@ -41,7 +40,8 @@ public class EmployeeServIMPL implements EmployeeServ {
 	}
 
 	/**
-	 * This Method is used to Find a Particular Employee by @param id
+	 * This Method is used to Find a Particular Employee by id
+	 * @param id
 	 * @return emp or null
 	 */
 	@Override
@@ -64,8 +64,8 @@ public class EmployeeServIMPL implements EmployeeServ {
 	}
 
 	/**
-	 *
-	 * emp - Object for the updated Employee Properties
+	 * This method is used to update the property of an employee
+	 * @param id
 	 * @return Message - Successful/Unsuccessful
 	 */
 	@Override
