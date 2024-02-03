@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 
 import com.qinvent.hr.models.Employee;
 import com.qinvent.hr.repository.EmployeeRepo;
-import com.qinvent.hr.service.EmployeeServ;
 
 /**
  * This class is the implementation class for the Interface EmployeeServ
@@ -30,18 +29,18 @@ public class EmployeeServIMPL implements EmployeeServ {
 
 	/**
 	 * Removes an Employee from database using id
-	 * @param id
+	 * @param id- Unique employee id
 	 * @return String - an Operation Successful Message
 	 */
 	@Override
 	public String removeEmployee(int id) {
 		empRepo.deleteById(id);
-		return "Employe Id: "+id+" Sucessfully Deleted";
+		return "Employee Id: "+id+" Successfully Deleted";
 	}
 
 	/**
 	 * This Method is used to Find a Particular Employee by id
-	 * @param id
+	 * @param id- Unique employee id
 	 * @return emp or null
 	 */
 	@Override
@@ -65,7 +64,7 @@ public class EmployeeServIMPL implements EmployeeServ {
 
 	/**
 	 * This method is used to update the property of an employee
-	 * @param id
+	 * @param id- Unique employee id
 	 * @return Message - Successful/Unsuccessful
 	 */
 	@Override
@@ -75,7 +74,7 @@ public class EmployeeServIMPL implements EmployeeServ {
 		{
 			Employee emps = new Employee();
 			empRepo.save(emps);
-			return "Employee Updated Sucessfully...";
+			return "Employee Updated Successfully...";
 			
 		}
 		else {
